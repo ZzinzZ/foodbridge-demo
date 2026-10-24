@@ -180,6 +180,11 @@
     // Tôn trọng thiết lập giảm chuyển động của người dùng: dừng video ở khung poster
     const video = document.querySelector('.hero-video');
     if (video && matchMedia('(prefers-reduced-motion: reduce)').matches) { video.removeAttribute('autoplay'); video.pause(); }
+    // Máy không giải mã được video thì quay về nền tĩnh (gradient + ảnh cảng) thay vì đứng hình
+    video?.addEventListener('error', () => {
+      video.remove();
+      document.querySelector('.hero-banner')?.classList.remove('has-video');
+    }, true);
   }
 
   App.init({ nav: 'home', render });
