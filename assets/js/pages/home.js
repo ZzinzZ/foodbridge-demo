@@ -74,7 +74,8 @@
   function roles() {
     const links = { exporter: 'products.html', logistics: 'services.html?tab=logistics', consulting: 'services.html?tab=consulting', insurance: 'services.html?tab=insurance' };
     return `
-      <section class="section section-white">
+      <section class="section section-white wave-top wave-bottom">
+        <div class="map-deco right" aria-hidden="true"></div>
         <div class="container">
           <div class="section-head"><div><span class="eyebrow">${t('home.roles.eyebrow')}</span><h2>${t('home.roles.title')}</h2><p>${t('home.roles.desc')}</p></div></div>
           <div class="role-grid">
@@ -124,7 +125,8 @@
   function services() {
     const picks = ['vietlink-cold', 'vinatrade-advisory', 'saigon-marine'].map(App.company);
     return `
-      <section class="section section-white">
+      <section class="section section-white wave-top wave-bottom">
+        <div class="map-deco left" aria-hidden="true"></div>
         <div class="container">
           <div class="section-head">
             <div><span class="eyebrow">${t('home.svc.eyebrow')}</span><h2>${t('home.svc.title')}</h2><p>${t('home.svc.desc')}</p></div>
@@ -147,18 +149,39 @@
       </section>`;
   }
 
+  /* Ba thị trường: bản đồ chấm khu vực Á – Thái Bình Dương (VN, CN, AU tô màu) + tuyến vận chuyển.
+     Toạ độ theo khung bản đồ 1200 × 970: x = (kinh độ − 65) × 10, y = (50 − vĩ độ) × 10 */
+  const MARKETS = { CN: { x: 390, y: 160 }, VN: { x: 415, y: 345 }, AU: { x: 690, y: 750 } };
+  const ROUTES = ['M415 345Q300 260 390 160', 'M415 345Q470 610 690 750', 'M390 160Q900 300 690 750'];
+
+  function marketStage() {
+    const pct = (v, total) => `${(v / total * 100).toFixed(2)}%`;
+    return `
+      <div class="market-stage" aria-hidden="true">
+        <div class="dots base"></div><div class="dots hl"></div>
+        <svg class="routes" viewBox="0 0 1200 970" preserveAspectRatio="none">
+          ${ROUTES.map((d, i) => `<path class="route" d="${d}"/>
+          <circle class="ship" r="9"><animateMotion dur="${5 + i}s" begin="${i * 1.3}s" repeatCount="indefinite" path="${d}"/></circle>`).join('')}
+        </svg>
+        ${Object.entries(MARKETS).map(([cc, m]) => `<span class="marker" data-cc="${cc}" style="left:${pct(m.x, 1200)};top:${pct(m.y, 970)}">${flag(cc)}</span>`).join('')}
+      </div>`;
+  }
+
   function countries() {
     return `
-      <section class="section" style="padding-top:0">
+      <section class="section markets" style="padding-top:0">
         <div class="container">
           <div class="section-head"><div><span class="eyebrow">${t('home.countries.eyebrow')}</span><h2>${t('home.countries.title')}</h2></div></div>
-          <div class="country-grid">
-            ${Object.keys(COUNTRIES).map(cc => `
-              <a class="country-card" href="products.html?country=${cc}">
-                ${flag(cc, 'big-flag')}
-                <div><h4 style="margin:0">${esc(L(COUNTRIES[cc].name))}</h4><p>${t(`home.country.${cc}`)}</p>
-                <span class="strong" style="color:var(--blue)">${t('home.country.count', { n: COMPANIES.filter(c => c.country === cc).length })}</span></div>
-              </a>`).join('')}
+          <div class="market-wrap">
+            ${marketStage()}
+            <div class="market-list">
+              ${Object.keys(COUNTRIES).map(cc => `
+                <a class="country-card" data-cc="${cc}" href="products.html?country=${cc}">
+                  ${flag(cc, 'big-flag')}
+                  <div><h4 style="margin:0">${esc(L(COUNTRIES[cc].name))}</h4><p>${t(`home.country.${cc}`)}</p>
+                  <span class="strong" style="color:var(--blue)">${t('home.country.count', { n: COMPANIES.filter(c => c.country === cc).length })}</span></div>
+                </a>`).join('')}
+            </div>
           </div>
         </div>
       </section>
@@ -173,10 +196,24 @@
       </section>`;
   }
 
+  /* Rê chuột vào thẻ quốc gia thì điểm tương ứng trên bản đồ nổi lên */
+  function bindMarkets() {
+    document.querySelectorAll('.market-list .country-card').forEach(card => {
+      const marker = document.querySelector(`.marker[data-cc="${card.dataset.cc}"]`);
+      const on = v => { card.classList.toggle('is-active', v); marker?.classList.toggle('is-active', v); };
+      card.addEventListener('mouseenter', () => on(true));
+      card.addEventListener('mouseleave', () => on(false));
+      card.addEventListener('focus', () => on(true));
+      card.addEventListener('blur', () => on(false));
+    });
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) document.querySelector('svg.routes')?.pauseAnimations();
+  }
+
   function render() {
     document.getElementById('page').innerHTML = `
       <section class="home-hero"><div class="container hero-grid">${catSide()}${heroBanner()}</div></section>
       ${threeCols()}${roles()}${catBlocks()}${services()}${steps()}${countries()}`;
+    bindMarkets();
     // Tôn trọng thiết lập giảm chuyển động của người dùng: dừng video ở khung poster
     const video = document.querySelector('.hero-video');
     if (video && matchMedia('(prefers-reduced-motion: reduce)').matches) { video.removeAttribute('autoplay'); video.pause(); }

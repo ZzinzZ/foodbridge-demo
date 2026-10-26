@@ -211,7 +211,7 @@
             <a href="company.html?id=${me.id}"><span>${t('dash.nav.public')} ↗</span></a>
           </nav>
         </aside>
-        <div style="min-width:0">
+        <div class="dash-main" style="min-width:0">
           <div class="dash-title">
             <div><span class="muted">${t('dash.hello', { name: 'Nguyễn Văn An' })}</span><h2>${t('dash.nav.' + panel)}</h2></div>
             ${panel !== 'add' ? `<a class="btn btn-teal" href="#add">+ ${t('dash.nav.add')}</a>` : ''}

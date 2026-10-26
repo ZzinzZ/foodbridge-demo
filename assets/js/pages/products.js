@@ -151,6 +151,25 @@
       </div>`;
   }
 
+  /* Skeleton trong lúc "tải" kết quả (ở bản thật là lúc chờ máy chủ trả dữ liệu) */
+  const skeleton = (n, isP) => n === 0 ? '' : isP
+    ? `<div class="product-grid">${Motion.skeletonCards(Math.min(n, 6))}</div>`
+    : `<div style="display:grid;gap:16px">${Motion.skeletonCards(Math.min(n, 3), 'row')}</div>`;
+
+  let pending = 0;
+  function loadResults(items, isP) {
+    const token = ++pending;
+    setTimeout(() => {
+      const box = document.getElementById('results');
+      if (token !== pending || !box) return;
+      box.innerHTML = items.length === 0
+        ? `<div class="card empty">${t('list.empty')}</div>`
+        : isP
+          ? `<div class="product-grid">${items.map(App.productCard).join('')}</div>`
+          : `<div style="display:grid;gap:16px">${items.map(supplierRow).join('')}</div>`;
+    }, Motion.reduce ? 0 : 320);
+  }
+
   function render() {
     const items = sorted(filtered());
     const isP = state.view === 'products';
@@ -181,14 +200,11 @@
             </label>
           </div>
           ${activeFilters()}
-          ${items.length === 0
-            ? `<div class="card empty">${t('list.empty')}</div>`
-            : isP
-              ? `<div class="product-grid">${items.map(App.productCard).join('')}</div>`
-              : `<div style="display:grid;gap:16px">${items.map(supplierRow).join('')}</div>`}
+          <div id="results" aria-live="polite">${skeleton(items.length, isP)}</div>
         </div>
       </div>`;
     bind();
+    loadResults(items, isP);
   }
 
   function toggle(arr, v) { const i = arr.indexOf(v); i >= 0 ? arr.splice(i, 1) : arr.push(v); }

@@ -24,6 +24,8 @@
     history.replaceState(null, '', 'services.html?' + p);
   }
 
+  let pending = 0;   // chỉ lần render mới nhất được đổ kết quả vào sau skeleton
+
   function render() {
     const list = providers();
     const k = state.tab;
@@ -59,10 +61,17 @@
           <span class="strong" style="margin-left:auto">${t('svc.count', { n: list.length })}</span>
         </div>
 
-        ${list.length
-          ? `<div class="prov-grid">${list.map(App.providerCard).join('')}</div>`
-          : `<div class="card empty">${t('list.empty')}</div>`}
+        <div id="results" aria-live="polite">${list.length ? `<div class="prov-grid">${Motion.skeletonCards(list.length, 'provider')}</div>` : ''}</div>
       </div>`;
+
+    const token = ++pending;
+    setTimeout(() => {
+      const box = document.getElementById('results');
+      if (token !== pending || !box) return;
+      box.innerHTML = list.length
+        ? `<div class="prov-grid">${list.map(App.providerCard).join('')}</div>`
+        : `<div class="card empty">${t('list.empty')}</div>`;
+    }, Motion.reduce ? 0 : 320);
 
     const page = document.getElementById('page');
     page.querySelectorAll('[data-tab]').forEach(el => el.addEventListener('click', () => {

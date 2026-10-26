@@ -75,6 +75,7 @@ const I18N = {
     'c.close': 'Đóng',
     'c.cancel': 'Hủy',
     'c.home': 'Trang chủ',
+    'c.toTop': 'Lên đầu trang',
 
     /* ----- Trang chủ ----- */
     'home.hero.eyebrow': 'Sàn B2B thực phẩm & đồ uống',
@@ -515,6 +516,7 @@ const I18N = {
     'c.close': 'Close',
     'c.cancel': 'Cancel',
     'c.home': 'Home',
+    'c.toTop': 'Back to top',
 
     'home.hero.eyebrow': 'B2B food & beverage marketplace',
     'home.hero.title': 'Sourcing food & beverages between Vietnam, China and Australia',
@@ -947,6 +949,7 @@ const I18N = {
     'c.close': '关闭',
     'c.cancel': '取消',
     'c.home': '首页',
+    'c.toTop': '返回顶部',
 
     'home.hero.eyebrow': 'B2B食品饮料贸易平台',
     'home.hero.title': '连接越南、中国和澳大利亚的食品饮料货源',
