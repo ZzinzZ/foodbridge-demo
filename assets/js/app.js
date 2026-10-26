@@ -183,6 +183,7 @@ const App = (() => {
             ${navLink('services.html?tab=logistics', 'nav.logistics', 'logistics')}
             ${navLink('services.html?tab=consulting', 'nav.consulting', 'consulting')}
             ${navLink('services.html?tab=insurance', 'nav.insurance', 'insurance')}
+            ${navLink('pricing.html', 'nav.pricing', 'pricing')}
             <span class="nav-spacer"></span>
             <a class="nav-cta" href="dashboard.html#add">${t('hdr.post')}</a>
           </div>
@@ -198,6 +199,7 @@ const App = (() => {
         <a href="services.html?tab=logistics">${t('nav.logistics')}</a>
         <a href="services.html?tab=consulting">${t('nav.consulting')}</a>
         <a href="services.html?tab=insurance">${t('nav.insurance')}</a>
+        <a href="pricing.html">${t('nav.pricing')}</a>
         <a href="register.html">${t('nav.register')}</a>
         <a href="dashboard.html">${t('nav.dashboard')}</a>
       </aside>`;
@@ -236,6 +238,7 @@ const App = (() => {
               <a href="register.html">${t('footer.register')}</a>
               <a href="dashboard.html#add">${t('footer.postProduct')}</a>
               <a href="dashboard.html#verify">${t('footer.verify')}</a>
+              <a href="pricing.html">${t('nav.pricing')}</a>
             </div>
             <div>
               <h5>${t('footer.support')}</h5>

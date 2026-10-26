@@ -91,6 +91,7 @@
           <a class="btn btn-primary btn-lg" href="dashboard.html">${t('reg.goDash')}</a>
           <a class="btn btn-outline btn-lg" href="index.html">${t('reg.goHome')}</a>
         </div>
+        <p class="muted" style="margin:24px 0 0">${t('reg.planNote')} <a class="link-arrow" href="pricing.html">${t('nav.pricing')}</a></p>
       </div>`;
   }
 

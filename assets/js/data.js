@@ -612,6 +612,13 @@ const BUY_REQUESTS = [
   { country: 'VN', hours: 48, title: { vi: 'Cần đơn vị vận chuyển lạnh HCM – Sydney', en: 'Need reefer shipping HCMC – Sydney', zh: '寻找胡志明市—悉尼冷链运输' }, city: { vi: 'Hà Nội', en: 'Hanoi', zh: '河内' } }
 ];
 
+/* Gói thành viên, thanh toán theo năm (giá minh họa, chủ sàn tự đặt trong trang quản trị) */
+const PLANS = [
+  { id: 'free',     price: { VND: 0,       USD: 0 },   limits: { products: 10,       contacts: 0 },        feats: 4 },
+  { id: 'standard', price: { VND: 3900000, USD: 159 }, limits: { products: 100,      contacts: 50 },       feats: 5, popular: true },
+  { id: 'premium',  price: { VND: 9900000, USD: 399 }, limits: { products: Infinity, contacts: Infinity }, feats: 5 }
+];
+
 /* Ảnh giới thiệu từng nhóm dịch vụ */
 const SERVICE_INTRO = {
   logistics:  { img: 'photo-1494412519320-aa613dfb7738' },

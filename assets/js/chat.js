@@ -63,11 +63,11 @@ const Chatbot = (() => {
     },
     {
       q: { vi: 'Phí tham gia sàn là bao nhiêu?', en: 'How much does it cost?', zh: '平台收费吗？' },
-      k: ['phi', 'gia goi', 'chi phi', 'fee', 'price plan', 'cost', 'membership', '费用', '收费', '会员'],
+      k: ['phi', 'gia goi', 'goi thanh vien', 'bang gia', 'chi phi', 'thanh toan', 'fee', 'pricing', 'plans', 'cost', 'membership', 'payment', '费用', '收费', '会员', '套餐', '支付'],
       a: {
-        vi: 'Đăng ký và đăng sản phẩm cơ bản miễn phí. Các gói thành viên (ưu tiên hiển thị, thêm số lượng tin đăng) sẽ được công bố trong bản chính thức.',
-        en: 'Registration and basic listings are free. Membership plans (priority placement, more listings) will be announced in the full version.',
-        zh: '注册和基础产品发布免费。会员套餐（优先展示、更多发布数量）将在正式版中公布。'
+        vi: 'Đăng ký và đăng tối đa 10 sản phẩm miễn phí. Gói Tiêu chuẩn và Cao cấp có thêm tin đăng, ưu tiên hiển thị và quyền xem liên hệ đối tác, thanh toán online theo năm. Xem chi tiết tại <a href="pricing.html">Gói thành viên</a>.',
+        en: 'Registration and up to 10 listings are free. Standard and Premium add more listings, priority placement and partner contact details, paid online yearly. See <a href="pricing.html">Membership plans</a>.',
+        zh: '注册及发布最多10个产品免费。标准版和高级版提供更多发布数量、优先展示和合作伙伴联系方式查看，按年在线支付。详见<a href="pricing.html">会员套餐</a>。'
       }
     },
     {

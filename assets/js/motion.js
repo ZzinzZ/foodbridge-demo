@@ -9,7 +9,7 @@ const Motion = (() => {
     '.section-head', '.three-col > .card', '.role-card', '.cat-feature', '.cat-block .s-card', '.p-card',
     '.prov-card', '.step', '.market-stage', '.market-list .country-card', '.cta-band', '.supplier-row',
     '.pd-main', '.pd-grid .side-box', '.co-card', '.co-layout > *', '.svc-intro', '.reg-card',
-    '.dash-main > *', '.stat', '.footer-grid > *'
+    '.dash-main > *', '.stat', '.footer-grid > *', '.plan-card', '.compare-wrap', '.faq'
   ].join(',');
 
   let instant = false;   // render lại do đổi ngôn ngữ: hiện ngay, không chạy lại hiệu ứng

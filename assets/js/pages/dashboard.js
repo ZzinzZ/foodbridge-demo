@@ -4,7 +4,8 @@
   const { t, L, esc, img } = App;
   const me = App.company('mekong-fresh');
   const STORE = 'fb_my_products';
-  const PANELS = ['overview', 'products', 'add', 'inquiries', 'profile', 'verify'];
+  const PANELS = ['overview', 'products', 'add', 'inquiries', 'profile', 'verify', 'plan'];
+  const M = Membership;
   const LANG_NAMES = { vi: 'Tiếng Việt', en: 'English', zh: '中文' };
 
   /* Sản phẩm mẫu ở các trạng thái khác nhau */
@@ -80,8 +81,10 @@
       [t('dash.stat.inq'), INQUIRIES.filter(q => q.isNew).length, 25],
       [t('dash.stat.rate'), '96%', null]
     ];
+    const st = M.current();
     return `
       <div class="note-bar">${t('dash.note')}</div>
+      ${st.id !== 'free' && st.daysLeft <= 30 ? planWarn(st) : ''}
       <div class="stat-grid">${stats.map(([l, n, d]) => `
         <div class="card stat"><div class="lbl">${l}</div><div class="num">${n}</div>${d ? `<div class="delta">${t('dash.stat.delta', { n: d })}</div>` : ''}</div>`).join('')}
       </div>
@@ -189,8 +192,67 @@
       </div>`;
   }
 
+  /* ---------- Gói thành viên ---------- */
+  const planWarn = st => `
+    <div class="note-bar warn plan-warn">
+      <span>${t('dash.plan.warn', { name: esc(M.name(st.id)), n: st.daysLeft, date: M.date(st.end) })}</span>
+      <button class="btn btn-navy btn-sm" type="button" data-buy="${st.id}">${t('dash.plan.renewNow')}</button>
+    </div>`;
+
+  function planPanel() {
+    const st = M.current();
+    const p = M.plan(st.id);
+    const next = PLANS[PLANS.indexOf(p) + 1];
+    const used = { products: allProducts().length, contacts: 18 };
+    const meter = (k, label) => {
+      const lim = p.limits[k];
+      const pct = lim === Infinity ? 100 : lim ? Math.min(100, Math.round(used[k] / lim * 100)) : 0;
+      return `
+        <div>
+          <div class="meter-head"><span>${label}</span><span class="strong">${used[k]} / ${lim === Infinity ? t('plan.unlimited') : lim}</span></div>
+          <div class="progress"><div style="width:${pct}%"></div></div>
+        </div>`;
+    };
+    return `
+      ${st.id !== 'free' && st.daysLeft <= 30 ? planWarn(st) : ''}
+      <div class="card plan-now">
+        <div>
+          <span class="eyebrow">${t('dash.plan.current')}</span>
+          <h3>${esc(M.name(st.id))}</h3>
+          <p class="muted">${t('dash.plan.price', { price: M.money(p.price[M.currency()]) })}<span class="sep">·</span>${t('dash.plan.expires', { date: M.date(st.end) })}, ${t('dash.plan.daysLeft', { n: st.daysLeft })}</p>
+        </div>
+        <div class="plan-now-act">
+          <button class="btn btn-primary" type="button" data-buy="${st.id}">${t('dash.plan.renew')}</button>
+          ${next ? `<button class="btn btn-outline" type="button" data-buy="${next.id}">${t('dash.plan.upgrade', { name: esc(M.name(next.id)) })}</button>` : ''}
+          <a class="link-arrow" href="pricing.html">${t('dash.plan.compare')}</a>
+        </div>
+      </div>
+      <div class="card card-pad plan-usage">
+        <h4>${t('dash.plan.usage')}</h4>
+        <div class="usage-grid">${meter('products', t('dash.plan.useProducts'))}${meter('contacts', t('dash.plan.useContacts'))}</div>
+        <label class="check"><input type="checkbox" id="remindToggle" ${st.remind ? 'checked' : ''}><span>${t('dash.plan.remind')}</span></label>
+      </div>
+      <div class="card">
+        <div class="panel-head"><h3>${t('dash.plan.history')}</h3></div>
+        <div class="table-wrap"><table class="table">
+          <thead><tr><th>${t('dash.plan.col.date')}</th><th>${t('dash.plan.col.item')}</th><th>${t('dash.plan.col.amount')}</th><th>${t('dash.plan.col.method')}</th><th>${t('dash.plan.col.status')}</th><th></th></tr></thead>
+          <tbody>${st.history.map(h => `
+            <tr>
+              <td class="muted">${M.date(h.date)}</td>
+              <td><span class="strong" style="display:block">${t(h.kind === 'renew' ? 'dash.plan.itemRenew' : 'dash.plan.itemNew', { name: esc(M.name(h.plan)) })}</span><span class="muted">${h.txn}</span></td>
+              <td style="white-space:nowrap">${M.money(h.amount, h.cur)}</td>
+              <td>${t('pay.m.' + h.method)}</td>
+              <td><span class="st-approved">${t('dash.plan.paid')}</span></td>
+              <td><div class="row-actions"><button type="button" data-soon>${t('dash.plan.receipt')}</button></div></td>
+            </tr>`).join('')}
+          </tbody>
+        </table></div>
+      </div>`;
+  }
+
   function panelHtml() {
     switch (panel) {
+      case 'plan': return planPanel();
       case 'products': return `<div class="card">${productTable(allProducts())}</div>`;
       case 'add': return addForm();
       case 'inquiries': return `<div class="card">${inquiryList(INQUIRIES)}</div>`;
@@ -202,10 +264,11 @@
 
   function render() {
     const newInq = INQUIRIES.filter(q => q.isNew).length;
+    const st = M.current();
     document.getElementById('page').innerHTML = `
       <div class="container dash">
         <aside class="card dash-side">
-          <div class="dash-user">${App.logoBox(me)}<div><strong>${esc(me.name)}</strong>${App.verifiedText(me)}</div></div>
+          <div class="dash-user">${App.logoBox(me)}<div><strong>${esc(me.name)}</strong>${App.verifiedText(me)}<a class="dash-plan" href="#plan">${t('dash.plan.label', { name: esc(M.name(st.id)) })}</a></div></div>
           <nav class="dash-nav">
             ${PANELS.map(k => `<a href="#${k}" class="${panel === k ? 'active' : ''}"><span>${t('dash.nav.' + k)}</span>${k === 'inquiries' ? `<span class="count">${newInq}</span>` : ''}</a>`).join('')}
             <a href="company.html?id=${me.id}"><span>${t('dash.nav.public')} ↗</span></a>
@@ -221,6 +284,8 @@
       </div>`;
     if (panel === 'add') bindAdd();
     document.getElementById('profileForm')?.addEventListener('submit', e => { e.preventDefault(); if (App.validate(e.target)) App.toast(t('toast.saved')); });
+    document.querySelectorAll('#page [data-buy]').forEach(b => b.addEventListener('click', () => M.checkout(b.dataset.buy, { onDone: render })));
+    document.getElementById('remindToggle')?.addEventListener('change', e => { M.setRemind(e.target.checked); App.toast(t('toast.saved')); });
   }
 
   /* ---------- Form đăng sản phẩm ---------- */
