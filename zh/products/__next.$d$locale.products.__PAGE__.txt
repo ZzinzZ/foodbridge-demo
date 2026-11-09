@@ -1,0 +1,37 @@
+3:"$Sreact.fragment"
+4:"/_next/static/chunks/42onvq6nokjl2.js"
+5:I[39756,["$4"],"default"]
+6:I[37457,["$4"],"default"]
+b:"$Sreact.suspense"
+c:"/_next/static/chunks/1qyrd4xvpfukw.js"
+d:"/_next/static/chunks/3w22zt4nols8m.js"
+e:"/_next/static/chunks/0er9dc_qscrpf.js"
+f:"/_next/static/chunks/423dt0s6j6ry2.js"
+10:"/_next/static/chunks/2z_tki3a8gl2w.js"
+11:"/_next/static/chunks/3eotpaj-ub211.js"
+12:"/_next/static/chunks/38djey0jxmdhw.js"
+13:"/_next/static/chunks/451sk4dcj83w0.js"
+14:"/_next/static/chunks/44s3c3ep5-5ck.js"
+15:"/_next/static/chunks/18ayrkmdxv3-4.js"
+16:I[35,["$c","$d","$e","$f","$10","$11","$12","$13","$14","$15"],"ListingView"]
+17:I[97367,["$4"],"OutletBoundary"]
+1a:"ViewportBoundary"
+1b:I[97367,["$4"],"$1a"]
+1c:"MetadataBoundary"
+1d:I[97367,["$4"],"$1c"]
+1e:I[27201,["$4"],"IconMark"]
+8:X
+8:C
+9:X
+a:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$3","c",{"children":[["$","$b",null,{"fallback":["$","div",null,{"aria-hidden":"true","children":[["$","div",null,{"className":"h-64 bg-page-head-gradient"}],["$","div",null,{"className":"container-page pt-8","children":["$","div",null,{"className":"grid grid-cols-2 gap-3 sm:grid-auto-fill-md sm:gap-5","children":[["$","div","0",{"aria-hidden":"true","className":"pointer-events-none flex flex-col overflow-hidden rounded-lg border border-line-medium bg-surface","children":[["$","div",null,{"className":"aspect-4/3 skeleton"}],["$","div",null,{"className":"p-4.5","children":[["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-9/10"}],["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-1/2"}],["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-3/5"}],["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-7/10"}]]}]]}],["$","div","1",{"aria-hidden":"true","className":"pointer-events-none flex flex-col overflow-hidden rounded-lg border border-line-medium bg-surface","children":[["$","div",null,{"className":"aspect-4/3 skeleton"}],["$","div",null,{"className":"p-4.5","children":[["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-9/10"}],["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-1/2"}],["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-3/5"}],["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-7/10"}]]}]]}],["$","div","2",{"aria-hidden":"true","className":"pointer-events-none flex flex-col overflow-hidden rounded-lg border border-line-medium bg-surface","children":[["$","div",null,{"className":"aspect-4/3 skeleton"}],["$","div",null,{"className":"p-4.5","children":[["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-9/10"}],["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-1/2"}],["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-3/5"}],["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-7/10"}]]}]]}],["$","div","3",{"aria-hidden":"true","className":"pointer-events-none flex flex-col overflow-hidden rounded-lg border border-line-medium bg-surface","children":[["$","div",null,{"className":"aspect-4/3 skeleton"}],["$","div",null,{"className":"p-4.5","children":[["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-9/10"}],["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-1/2"}],["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-3/5"}],["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-7/10"}]]}]]}],["$","div","4",{"aria-hidden":"true","className":"pointer-events-none flex flex-col overflow-hidden rounded-lg border border-line-medium bg-surface","children":[["$","div",null,{"className":"aspect-4/3 skeleton"}],["$","div",null,{"className":"p-4.5","children":[["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-9/10"}],["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-1/2"}],["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-3/5"}],["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-7/10"}]]}]]}],["$","div","5",{"aria-hidden":"true","className":"pointer-events-none flex flex-col overflow-hidden rounded-lg border border-line-medium bg-surface","children":[["$","div",null,{"className":"aspect-4/3 skeleton"}],["$","div",null,{"className":"p-4.5","children":[["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-9/10"}],["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-1/2"}],["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-3/5"}],["$","span",null,{"className":"my-2 block h-3 skeleton rounded-md w-7/10"}]]}]]}]]}]}]]}],"children":["$","$L16",null,{}]}],[["$","script","script-0",{"src":"/_next/static/chunks/44s3c3ep5-5ck.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/18ayrkmdxv3-4.js","async":true}]],["$","$L17",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@18"}]}]]}],"p":"$@19","v":null,"s":"$9"}}]]
+2:[["children",{"s":"products","h":64,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
+1:[["children",{"s":{"n":"locale","t":"d","k":"zh","s":[]},"h":48,"c":"$Q2"}]]
+0:{"t":{"t":{"s":"","h":80,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L1b",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L1d",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$b",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Mekolink — 食品饮料B2B平台"}],["$","meta","1",{"name":"description","content":"连接越南、中国和澳大利亚食品饮料进出口商与物流、咨询及保险合作伙伴的B2B平台。"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.117ezoe8m31dk.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L1e","3",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@1f","v":null,"s":"$9"}},"a":"$@20","u":"$@21","b":"DRgVK4QI14_7nBHaMO3AJ"}
+18:null
+21:true
+9:300
+9:C
+20:0
+7:"$undefined"
+1f:"$undefined"
+19:"$undefined"
