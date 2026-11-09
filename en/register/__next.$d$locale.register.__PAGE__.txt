@@ -6,11 +6,11 @@ b:"$Sreact.suspense"
 c:"/_next/static/chunks/0j1-gm6b30n_w.js"
 d:"/_next/static/chunks/3w22zt4nols8m.js"
 e:"/_next/static/chunks/0er9dc_qscrpf.js"
-f:"/_next/static/chunks/423dt0s6j6ry2.js"
+f:"/_next/static/chunks/1kle6dr-ytlsg.js"
 10:"/_next/static/chunks/3eotpaj-ub211.js"
 11:"/_next/static/chunks/451sk4dcj83w0.js"
 12:"/_next/static/chunks/01n8dn1gdmvys.js"
-13:"/_next/static/chunks/2z_tki3a8gl2w.js"
+13:"/_next/static/chunks/1f-7-5iz_f6iy.js"
 14:"/_next/static/chunks/0oewz2ud4_88q.js"
 15:I[89597,["$c","$d","$e","$f","$10","$11","$12","$13","$14"],"RegisterView"]
 16:I[97367,["$4"],"OutletBoundary"]
@@ -25,7 +25,7 @@ f:"/_next/static/chunks/423dt0s6j6ry2.js"
 a:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$3","c",{"children":[["$","$b",null,{"children":["$","$L15",null,{}]}],[["$","script","script-0",{"src":"/_next/static/chunks/0oewz2ud4_88q.js","async":true}]],["$","$L16",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@17"}]}]]}],"p":"$@18","v":null,"s":"$9"}}]]
 2:[["children",{"s":"register","h":64,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
 1:[["children",{"s":{"n":"locale","t":"d","k":"en","s":[]},"h":48,"c":"$Q2"}]]
-0:{"t":{"t":{"s":"","h":80,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L1a",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L1c",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$b",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Mekolink — B2B Food & Beverage Marketplace"}],["$","meta","1",{"name":"description","content":"A B2B marketplace connecting food & beverage importers and exporters with logistics, consulting and insurance partners in Vietnam, China and Australia."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.117ezoe8m31dk.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L1d","3",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@1e","v":null,"s":"$9"}},"a":"$@1f","u":"$@20","b":"OqOhfP_GAkkPgBehdTETy"}
+0:{"t":{"t":{"s":"","h":80,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L1a",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L1c",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$b",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Mekolink — B2B Food & Beverage Marketplace"}],["$","meta","1",{"name":"description","content":"A B2B marketplace connecting food & beverage importers and exporters with logistics, consulting and insurance partners in Vietnam, China and Australia."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.117ezoe8m31dk.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L1d","3",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@1e","v":null,"s":"$9"}},"a":"$@1f","u":"$@20","b":"m4GFii66CeoIOfejOZGzf"}
 17:null
 20:true
 9:300

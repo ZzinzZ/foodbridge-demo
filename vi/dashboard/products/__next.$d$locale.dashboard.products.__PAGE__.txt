@@ -2,11 +2,11 @@
 4:"/_next/static/chunks/0j1-gm6b30n_w.js"
 5:"/_next/static/chunks/3w22zt4nols8m.js"
 6:"/_next/static/chunks/0er9dc_qscrpf.js"
-7:"/_next/static/chunks/423dt0s6j6ry2.js"
+7:"/_next/static/chunks/1kle6dr-ytlsg.js"
 8:"/_next/static/chunks/3eotpaj-ub211.js"
 9:"/_next/static/chunks/451sk4dcj83w0.js"
 a:"/_next/static/chunks/01n8dn1gdmvys.js"
-b:"/_next/static/chunks/2z_tki3a8gl2w.js"
+b:"/_next/static/chunks/1f-7-5iz_f6iy.js"
 c:"/_next/static/chunks/443pbpwth9a7y.js"
 d:I[61114,["$4","$5","$6","$7","$8","$9","$a","$b","$c"],"ClientOnly"]
 e:I[60536,["$4","$5","$6","$7","$8","$9","$a","$b","$c"],"DashboardShell"]
@@ -30,7 +30,7 @@ f:"/_next/static/chunks/42onvq6nokjl2.js"
 14:[["children",{"s":"products","h":96,"d":{"r":["$","$3","c",{"children":[null,["$","$L10",null,{"parallelRouterKey":"children","template":["$","$L11",null,{}]}]]}],"p":"$@15","v":"$16","s":"$13"},"c":"$Q17"}]]
 2:[["children",{"s":"dashboard","h":64,"d":{"r":["$","$3","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/443pbpwth9a7y.js","async":true}]],["$","$Ld",null,{"fallback":["$","div",null,{"aria-hidden":"true","className":"container-page flex flex-col gap-7 pt-7 lg:flex-row","children":[["$","div",null,{"className":"h-80 skeleton rounded-lg lg:w-70"}],["$","div",null,{"className":"flex-1","children":[["$","div",null,{"className":"mb-6 h-16 skeleton rounded-lg"}],["$","div",null,{"className":"h-96 skeleton rounded-lg"}]]}]]}],"children":["$","$Le",null,{"children":["$","$L10",null,{"parallelRouterKey":"children","template":["$","$L11",null,{}]}]}]}]]}],"p":"$@12","v":null,"s":"$13"},"c":"$Q14"}]]
 1:[["children",{"s":{"n":"locale","t":"d","k":"vi","s":[]},"h":48,"c":"$Q2"}]]
-0:{"t":{"t":{"s":"","h":80,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L20",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L22",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$1c",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Mekolink — Sàn B2B thực phẩm & đồ uống"}],["$","meta","1",{"name":"description","content":"Sàn B2B kết nối nhà xuất nhập khẩu thực phẩm & đồ uống với đối tác logistics, tư vấn và bảo hiểm tại Việt Nam, Trung Quốc và Úc."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.117ezoe8m31dk.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L23","3",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@24","v":null,"s":"$13"}},"a":"$@25","u":"$@26","b":"OqOhfP_GAkkPgBehdTETy"}
+0:{"t":{"t":{"s":"","h":80,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L20",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L22",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$1c",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Mekolink — Sàn B2B thực phẩm & đồ uống"}],["$","meta","1",{"name":"description","content":"Sàn B2B kết nối nhà xuất nhập khẩu thực phẩm & đồ uống với đối tác logistics, tư vấn và bảo hiểm tại Việt Nam, Trung Quốc và Úc."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.117ezoe8m31dk.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L23","3",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@24","v":null,"s":"$13"}},"a":"$@25","u":"$@26","b":"m4GFii66CeoIOfejOZGzf"}
 1d:null
 26:true
 13:300

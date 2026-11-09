@@ -5,11 +5,11 @@
 b:"/_next/static/chunks/0j1-gm6b30n_w.js"
 c:"/_next/static/chunks/3w22zt4nols8m.js"
 d:"/_next/static/chunks/0er9dc_qscrpf.js"
-e:"/_next/static/chunks/423dt0s6j6ry2.js"
+e:"/_next/static/chunks/1kle6dr-ytlsg.js"
 f:"/_next/static/chunks/3eotpaj-ub211.js"
 10:"/_next/static/chunks/451sk4dcj83w0.js"
 11:"/_next/static/chunks/01n8dn1gdmvys.js"
-12:"/_next/static/chunks/2z_tki3a8gl2w.js"
+12:"/_next/static/chunks/1f-7-5iz_f6iy.js"
 13:"/_next/static/chunks/0fzbuy8a52oq4.js"
 14:"/_next/static/chunks/18ayrkmdxv3-4.js"
 15:"HydrationBoundary"
@@ -25,10 +25,10 @@ f:"/_next/static/chunks/3eotpaj-ub211.js"
 8:X
 8:C
 9:X
-a:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$3","c",{"children":[["$","$L16",null,{"state":{"mutations":[],"queries":[{"dehydratedAt":1794199568524,"state":{"data":[{"id":"FREE","price":{"VND":0,"USD":0},"limits":{"products":10,"contacts":0},"isPopular":false},{"id":"STANDARD","price":{"VND":3900000,"USD":159},"limits":{"products":100,"contacts":50},"isPopular":true},{"id":"PREMIUM","price":{"VND":9900000,"USD":399},"limits":{"products":null,"contacts":null},"isPopular":false}],"dataUpdateCount":1,"dataUpdatedAt":1794199568524,"error":null,"errorUpdateCount":0,"errorUpdatedAt":0,"fetchFailureCount":0,"fetchFailureReason":null,"fetchMeta":null,"isInvalidated":false,"status":"success","fetchStatus":"idle"},"queryKey":["plans"],"queryHash":"[\"plans\"]"}]},"children":["$","$L17",null,{}]}],[["$","script","script-0",{"src":"/_next/static/chunks/0fzbuy8a52oq4.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/18ayrkmdxv3-4.js","async":true}]],["$","$L18",null,{"children":["$","$19",null,{"name":"Next.MetadataOutlet","children":"$@1a"}]}]]}],"p":"$@1b","v":null,"s":"$9"}}]]
+a:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$3","c",{"children":[["$","$L16",null,{"state":{"mutations":[],"queries":[{"dehydratedAt":1794200226573,"state":{"data":[{"id":"FREE","price":{"VND":0,"USD":0},"limits":{"products":10,"contacts":0},"isPopular":false},{"id":"STANDARD","price":{"VND":3900000,"USD":159},"limits":{"products":100,"contacts":50},"isPopular":true},{"id":"PREMIUM","price":{"VND":9900000,"USD":399},"limits":{"products":null,"contacts":null},"isPopular":false}],"dataUpdateCount":1,"dataUpdatedAt":1794200226573,"error":null,"errorUpdateCount":0,"errorUpdatedAt":0,"fetchFailureCount":0,"fetchFailureReason":null,"fetchMeta":null,"isInvalidated":false,"status":"success","fetchStatus":"idle"},"queryKey":["plans"],"queryHash":"[\"plans\"]"}]},"children":["$","$L17",null,{}]}],[["$","script","script-0",{"src":"/_next/static/chunks/0fzbuy8a52oq4.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/18ayrkmdxv3-4.js","async":true}]],["$","$L18",null,{"children":["$","$19",null,{"name":"Next.MetadataOutlet","children":"$@1a"}]}]]}],"p":"$@1b","v":null,"s":"$9"}}]]
 2:[["children",{"s":"pricing","h":64,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
 1:[["children",{"s":{"n":"locale","t":"d","k":"vi","s":[]},"h":48,"c":"$Q2"}]]
-0:{"t":{"t":{"s":"","h":80,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L1d",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L1f",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$19",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Mekolink — Sàn B2B thực phẩm & đồ uống"}],["$","meta","1",{"name":"description","content":"Sàn B2B kết nối nhà xuất nhập khẩu thực phẩm & đồ uống với đối tác logistics, tư vấn và bảo hiểm tại Việt Nam, Trung Quốc và Úc."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.117ezoe8m31dk.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L20","3",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@21","v":null,"s":"$9"}},"a":"$@22","u":"$@23","b":"OqOhfP_GAkkPgBehdTETy"}
+0:{"t":{"t":{"s":"","h":80,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L1d",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L1f",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$19",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Mekolink — Sàn B2B thực phẩm & đồ uống"}],["$","meta","1",{"name":"description","content":"Sàn B2B kết nối nhà xuất nhập khẩu thực phẩm & đồ uống với đối tác logistics, tư vấn và bảo hiểm tại Việt Nam, Trung Quốc và Úc."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.117ezoe8m31dk.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L20","3",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@21","v":null,"s":"$9"}},"a":"$@22","u":"$@23","b":"m4GFii66CeoIOfejOZGzf"}
 1a:null
 23:true
 9:300

@@ -1,8 +1,8 @@
-:HL["/_next/static/chunks/0gnx57lrrup6v.css","style"]
+:HL["/_next/static/chunks/0c2p27oqysito.css","style"]
 :HL["/_next/static/media/cabb10e1d7cbc7c1-s.p.10u7vx61f1ie7.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/d8aeca813a9ab546-s.p.18rizl4rsrl42.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 4:[["children",{"s":"__PAGE__","h":160}]]
 3:[["children",{"s":{"n":"companyId","t":"d","k":"pacific-bridge","s":[]},"h":96,"c":"$Q4"}]]
 2:[["children",{"s":"companies","h":64,"c":"$Q3"}]]
 1:[["children",{"s":{"n":"locale","t":"d","k":"zh","s":[]},"h":48,"c":"$Q2"}]]
-0:{"b":"OqOhfP_GAkkPgBehdTETy","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"m4GFii66CeoIOfejOZGzf","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
